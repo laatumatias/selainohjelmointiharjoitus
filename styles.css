@@ -1,0 +1,222 @@
+/* Sarjataulukko */
+
+body {
+    font-family: Arial, sans-serif; /* Fontti */
+    background-color: #f4f4f4; /* Taustaväri */
+    color: #333; /* Tekstin väri */
+    margin: 0; /* Ei marginaalia */
+    padding: 20px; /* Täyttö */
+}
+
+header {
+    text-align: center; /* Keskitetään teksti */
+    font-size: 2em; /* Otsikon koko */
+    margin-bottom: 20px; /* Alhaalla oleva marginaali */
+    color: #000000; /* Otsikon väri */
+}
+
+.container {
+    display: flex; /* Flexbox-asettelu */
+    flex-direction: column; /* Pystysuuntainen järjestys */
+    font-size: x-large; /* Fonttikoko */
+    align-items: center; /* Keskitetään kortit */
+}
+
+.team-card {
+    border: 1px solid #ddd; /* Rajoitus */
+    padding: 15px; /* Täyttö kortin sisällä */
+    margin: 10px; /* Marginaali kortin ympärillä */
+    background-color: white; /* Taustaväri */
+    border-radius: 8px; /* Kulmien pyöristys */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Varjostus */
+    width: 300px; /* Kortin leveys */
+    text-align: center; /* Tekstin keskitys */
+}
+
+.team-logo {
+    width: 80px; /* Logon leveys */
+    height: auto; /* Logon korkeus automaattisesti */
+    margin-bottom: 10px; /* Alhaalla oleva marginaali */
+}
+
+.team-name {
+    font-weight: bold; /* Paksu fontti */
+    font-size: 1.2em; /* Fonttikoko */
+}
+
+.team-points, .team-wins {
+    color: #555; /* Tekstin väri */
+    margin: 5px 0; /* Marginaali ylös ja alas */
+}
+
+.team-losses {
+    color: #e43636; /* Tekstin väri */
+    margin: 5px 0; /* Marginaali ylös ja alas */
+}
+
+footer {
+    text-align: center; /* Keskitetään teksti */
+    font-size: 0.9em; /* Fonttikoko */
+    margin-top: 20px; /* Ylhäällä oleva marginaali */
+    color: #777; /* Tekstin väri */
+}
+
+@media (max-width: 600px) {
+    .team-card {
+        width: 90%; /* Kortin leveys pienissä näytöissä */
+    }
+}
+
+/* Pudotuspelit */
+
+body {
+    font-family: Arial, sans-serif; /* Fontti */
+    background-color: #f8f9fa; /* Taustaväri */
+    color: #333; /* Tekstin väri */
+}
+
+h1 {
+    text-align: center; /* Keskitetään otsikko */
+    margin: 20px 0; /* Marginaali ylös ja alas */
+}
+
+#playoff-container {
+    max-width: 800px; /* Maksimileveys */
+    margin: 0 auto; /* Keskitetään sisältö */
+    padding: 20px; /* Täyttö */
+}
+
+.round {
+    margin-bottom: 40px; /* Alhaalla oleva marginaali */
+}
+
+.round h2 {
+    text-align: center; /* Keskitetään otsikko */
+    color: #007bff; /* Otsikon väri */
+}
+
+.series-container {
+    display: flex; /* Flexbox-asettelu */
+    flex-direction: column; /* Pystysuuntainen järjestys */
+    align-items: center; /* Keskitetään vaakasuunnassa */
+}
+
+.series {
+    display: flex; /* Flexbox-asettelu */
+    justify-content: center; /* Keskitetään sisältö vaakasuunnassa */
+    align-items: center; /* Keskitetään sisältö pystysuuntaan */
+    margin: 20px 0; /* Marginaali ylös ja alas */
+    padding: 10px; /* Täyttö */
+    border: 1px solid #007bff; /* Rajoitus */
+    border-radius: 5px; /* Kulmien pyöristys */
+    background-color: #e9ecef; /* Taustaväri */
+    position: relative; /* Asettelu */
+}
+
+.team {
+    display: flex; /* Flexbox-asettelu */
+    align-items: center; /* Keskitetään pystysuuntaan */
+    margin: 0 10px; /* Marginaali vasemmalle ja oikealle */
+}
+
+.team-logo {
+    width: 50px; /* Logon leveys */
+    height: 50px; /* Logon korkeus */
+    margin-right: 10px; /* Oikealla oleva marginaali */
+}
+
+.team-info {
+    flex-grow: 1; /* Kasvaa tilan mukaan */
+}
+
+.team-name {
+    font-weight: bold; /* Paksu fontti */
+    font-size: 1.2em; /* Fonttikoko */
+}
+
+.team-wins {
+    color: #28a745; /* Voittojen väri */
+}
+
+.vs {
+    font-size: 1.5em; /* Fonttikoko */
+    font-weight: bold; /* Paksu fontti */
+    margin: 0 20px; /* Marginaali */
+}
+
+.winner {
+    text-align: center; /* Keskitetään teksti */
+    margin-top: 10px; /* Ylhäällä oleva marginaali */
+}
+
+.winner-logo {
+    width: 160px; /* Voittajan logon koko */
+    height: 40px; /* Logon korkeus */
+}
+
+/* Maalitilastot */
+
+body {
+    font-family: Arial, sans-serif; /* Fontti */
+    line-height: 1.6; /* Riviväli */
+    margin: 0; /* Ei marginaalia */
+    padding: 0; /* Ei täyttöä */
+    text-align: center; /* Keskitetään teksti */
+    background-color: #f4f4f4; /* Taustaväri */
+}
+
+nav {
+    background: #1f1e1e; /* Navigaation taustaväri */
+    color: #fff; /* Tekstin väri */
+    padding: 10px 0; /* Täyttö */
+}
+
+nav ul {
+    list-style: none; /* Poistetaan listatyylit */
+    padding: 0; /* Ei täyttöä */
+    display: flex; /* Flexbox-asettelu */
+    justify-content: center; /* Keskitetään vaakasuunnassa */
+}
+
+nav ul li {
+    margin: 0 15px; /* Marginaali vasemmalle ja oikealle */
+}
+
+nav ul li a {
+    color: #fff; /* Linkkien väri */
+    text-decoration: none; /* Poistetaan alleviivaus */
+}
+
+h1 {
+    text-align: center; /* Keskitetään otsikko */
+    margin: 20px 0; /* Marginaali ylös ja alas */
+}
+
+input[type="text"] {
+    padding: 10px; /* Täyttö */
+    width: 300px; /* Leveys */
+    border: 2px solid #333; /* Rajoitus */
+    border-radius: 5px; /* Kulmien pyöristys */
+    margin-right: 10px; /* Oikealla oleva marginaali */
+}
+
+button {
+    padding: 10px 15px; /* Täyttö */
+    background: #333; /* Taustaväri */
+    color: #fff; /* Tekstin väri */
+    border: none; /* Ei rajoitusta */
+    border-radius: 5px; /* Kulmien pyöristys */
+    cursor: pointer; /* Muuttaa kursoria */
+}
+
+button:hover {
+    background: #555; /* Tummempi taustaväri hover-tilassa */
+}
+
+#team-info {
+    margin: 20px auto; /* Marginaali ylös ja alas */
+    padding: 15px; /* Täyttö */
+    background: #fff; /* Taustaväri */
+    border: 1px solid #ddd; /* Rajoitus */
+    border-radius: 5px; /* Kulmien pyöristys */
+}

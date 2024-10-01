@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8"> <!-- Määrittää merkistön UTF-8, joka tukee useita kieliä ja merkkejä -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Määrittää näkymän mobiililaitteille ja skaalaa sivua oikein -->
+    <title>Joukkueen tilastohaku</title> <!-- Sivun otsikko, joka näkyy selainvälilehdellä -->
+    <link rel="stylesheet" href="styles.css"> <!-- Linkitetään CSS-tiedosto, joka määrittää sivun tyylin -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Lisätään jQuery-kirjasto, joka helpottaa JavaScript-toiminnallisuutta -->
+    
+    <meta charset="UTF-8"> <!-- Määritetään merkistö UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Määritetään näkymä mobiililaitteille -->
+    <title>Joukkueen tilastohaku</title> <!-- Sivun otsikko -->
+    <link rel="stylesheet" href="styles.css"> <!-- Linkitetään CSS-tiedosto -->
+</head>
+<body>
+    <nav> <!-- Navigaatio-osio -->
+        <ul>
+            <li><a href="standings.html">Sarjataulukko</a></li> <!-- Linkki sarjataulukkoon -->
+            <li><a href="playoffs.html">Pudotuspelit</a></li> <!-- Linkki pudotuspeleihin -->
+            <li><a href="search.html">Maalitilastot</a></li> <!-- Linkki maalitilastoihin -->
+        </ul>
+    </nav>
+
+    <h1>Hae NHL-joukkueiden maalitilastoja</h1> <!-- Pään otsikko -->
+
+    <input type="text" id="teamSearch" placeholder="Syötä joukkueen nimi"> <!-- Hakukenttä joukkueen nimeä varten -->
+    <button id="searchButton">Hae</button> <!-- Haku-painike -->
+
+    <div id="team-info"></div> <!-- Elementti joukkueen tietojen näyttämistä varten -->
+
+    <footer> <!-- Alatunniste -->
+        <div>Tämä sivusto käyttää <a href="https://github.com/Zmalski/NHL-API-Reference?tab=readme-ov-file#base-url">NHL-rajapintaa</a></div> <!-- Linkki NHL-rajapintaan -->
+    </footer>
+     
+    <script src="search.scripts.js"></script> <!-- Linkitetään JavaScript-tiedosto -->
+</body>
+</html>
