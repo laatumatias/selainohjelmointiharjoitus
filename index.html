@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8"> <!-- Määritetään merkistö UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsiivinen suunnittelu -->
+        <title>NHL</title> <!-- Sivun otsikko -->
+        <link rel="stylesheet" href="styles.css"> <!-- Linkitetään CSS-tyylitiedosto -->
+    </head>
+    <body>
+
+        <nav> <!-- Navigaatio-osio -->
+            <ul>
+              <li><a href="standings.html">Sarjataulukko</a></li> <!-- Linkki sarjataulukkoon -->
+              <li><a href="playoffs.html">Pudotuspelit</a></li> <!-- Linkki pudotuspeleihin -->
+              <li><a href="search.html">Maalitilastot</a></li> <!-- Linkki maalitilastoihin -->
+            </ul>
+          </nav>
+
+        <header><h1>NHL</h1></header> <!-- Otsikko, joka näkyy sivun yläosassa -->
+
+        <div class="container" id="team-container"> <!-- Joukkueiden tiedot -->
+            Sarjataulukko 2023-2024 <!-- Teksti, joka kertoo sarjataulukon kauden -->
+        </div>
+       
+        <footer> 
+            <div>Tämä sivusto käyttää <a href="https://github.com/Zmalski/NHL-API-Reference?tab=readme-ov-file#base-url">NHL-rajapinta</a></div> <!-- Linkki NHL-rajapintaan -->
+        </footer>
+        
+        <script src="scripts.js"></script> <!-- Linkitetään JavaScript-tiedosto -->
+    </body>
+</html>
